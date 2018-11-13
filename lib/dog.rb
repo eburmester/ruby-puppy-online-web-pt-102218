@@ -3,14 +3,14 @@ class Dog
   
   attr_accessor :name
   
-  def initialize(new_dog)
-    @name = new_dog
+  def initialize(name)
+    @name = name
     @@all << self 
   end 
 
   def self.all 
-    @@all.each do 
-      puts "@name"
+    @@all.each do |name|
+      puts name
     end 
   end 
   
