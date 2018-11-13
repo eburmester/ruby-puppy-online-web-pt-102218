@@ -12,6 +12,10 @@ class Dog
     @name
   end
   
+  def name
+    @name
+  end
+  
   def self.all 
     @@all.map do |name|
       puts name
